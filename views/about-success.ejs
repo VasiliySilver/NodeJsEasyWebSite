@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body {background-color: lightgoldenrodyellow;}
+        .block {text-align: center; width: 70%; margin-left: 15%}
+        h1 {color: darkcyan; font-size: 3.5em}
+        p {color: darkgray; font-size: 1.2em}
+        a {color: darkgray; font-size: 1.2em}
+    </style>
+</head>
+<body>
+<%- include ('./blocks/header.ejs') %>
+<div class="block">
+    <h1>Страница о нас</h1>
+    <a href="http://127.0.0.1:3000/"><p>Ссылка на index</p></a>
+    <p>Здесь вы можете узнать информацию о нас. Введите ваши данные ниже</p>
+    <p>
+        <b>Email:</b> <%= data.email %> <br>
+        <b>Pass:</b> <%= data.pass %> <br>
+        <b>isCheck:</b> <%= data.checkbox %>
+    </p>
+</div>
+</body>
+</html>
